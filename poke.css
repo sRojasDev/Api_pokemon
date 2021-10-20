@@ -1,0 +1,42 @@
+html{
+   background-image: url("./backpoke.jpg"); /*rgba(0, 191, 255, 0.794);  */
+   background-size:cover;
+   background-position: center;
+   background-attachment: fixed;
+    /* background:rgba(5, 5, 41, 0.76) ; */
+    color: #fff; 
+    text-align: center;
+}
+.loaded{
+    margin: 20px;
+    text-align: center;
+}
+.rotated{
+	animation-name: rotation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+.grid-fluid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+  text-align: center;
+}
+.targeta{
+  background-color: rgb(5, 5, 41, 0.83);
+  /* background-color:rgb(123,104,238); */
+  border-radius: 8px;
+  border: 2px solid  #000 ;
+}
+.title{
+  color:rgb(255,255,0); 
+}
